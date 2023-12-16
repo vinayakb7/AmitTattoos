@@ -2,6 +2,7 @@
 
 :root{
     --white: #ddd;
+    --orange: #e3751b;
     --dark: #111;
     --darkGrey: #474b4f;
     --lightGrey: #6b6e70;
@@ -44,36 +45,37 @@ h1, h2, h3, h4, h5, h6, p{
     margin: 0 auto;
 }
 .btn{
-    background: var(--darkGreen);
+    background: var(--orange);
     border: none;
     display: block;
     width: 150px;
     text-align: center;
-    color: var(--darkGreen);
+    color: var(--orange);
     text-transform: uppercase;
     background: transparent;
     font-size: 15px;
     padding: 12px;
-    border: 2px solid var(--darkGreen);
+    border: 2px solid var(--orange);
     border-radius: 25px;
     margin: 15px 0;
     transition: var(--transition);
 }
 .btn:hover{
-    background: var(--darkGreen);
+    background: var(--orange);
     color: #fff;
 }
 .active{
-    color: var(--lightGreen)!important;
+    color: var(--orange)!important;
 }
 
 /**************** end of Utility Classes *******************/
+
 
 /********************** Header styling *********************/
 
 .header{
     min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/header.jpg") center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/background.jpg") center/cover no-repeat;
     color: #fff;
 }
 .top-nav a{
@@ -131,7 +133,7 @@ h1, h2, h3, h4, h5, h6, p{
 .top-nav ul a::after{
     content: "";
     height: 2px;
-    background: var(--lightGreen);
+    background: var(--orange);
     position: absolute;
     bottom: -5px;
     left: 50%;
@@ -159,9 +161,10 @@ h1, h2, h3, h4, h5, h6, p{
 }
 .about-content h2{
     font-size: 48px;
+    font-weight: 800;
     text-align: center;
     margin-bottom: 35px;
-    color: var(--lightGreen);
+    color: var(--orange);
 }
 .about-content h3{
     color: #fff;
@@ -170,6 +173,12 @@ h1, h2, h3, h4, h5, h6, p{
     background: rgba(255, 255, 255, 0.1);
     width: 400px;
     margin: 35px auto;
+    text-align: center;
+}
+.text-flicker-in-glow{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 100;
     text-align: center;
 }
 blockquote{
@@ -183,7 +192,7 @@ blockquote{
 blockquote span{
     font-size: 14px;
     text-transform: uppercase;
-    color: var(--darkGreen);
+    color: var(--orange);
     font-weight: 300;
     letter-spacing: 5px;
     display: block;
@@ -211,8 +220,8 @@ blockquote span{
     justify-content: space-around;
 }
 .social-icons ul a:hover{
-    background: var(--lightGreen);
-    border-color: var(--lightGreen);
+    background: var(--orange);
+    border-color: var(--orange);
 }
 
 /********************* End of Header ***********************/
@@ -228,7 +237,7 @@ blockquote span{
 }
 .sec-one-left{
     height: 100vh;
-    background: url("images/project-main.jpg") center/cover no-repeat;
+    background: url("images/amit-tattoo-main.jpg") center/cover no-repeat;
     box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.75);
@@ -314,7 +323,7 @@ blockquote span{
     width: 100%;
     height: 100%;
     font-size: 50px;
-    background: rgba(134, 194, 50, 0.4);
+    background: rgba(194, 124, 50, 0.4);
     opacity: 0;
     transition: var(--transition);
 }
@@ -469,7 +478,7 @@ blockquote span{
     margin: 40px 0;
 }
 .footer-container h2{
-    color: var(--lightGreen);
+    color: var(--orange);
     font-size: 36px;
     font-weight: 500;
     letter-spacing: 7px;
@@ -504,9 +513,9 @@ blockquote span{
     font-size: 16px;
     padding: 15px 0;
     font-weight: bold;
-    background: var(--lightGreen);
+    background: var(--orange);
     border: none;
-    transition: var(--transition);
+    transition: var(--orange);
     cursor: pointer;
 }
 .subs button:hover{
