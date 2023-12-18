@@ -35,6 +35,11 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 /********************** Utility Classes *******************/
+
+.icon-color, .contact-text{
+    color: var(--orange);
+}
+
 .flex{
     display: flex;
     justify-content: center;
@@ -454,10 +459,17 @@ blockquote span{
     font-size: 16px;
     padding: 10px 15px;
     margin: 10px 0;
-    border: 1px solid var(--lightGreen);
+    border: 1px solid var(--orange);
     outline: none;
     border-radius: 5px;
+    color: var(--orange);
+    font-weight: 400;
 }
+
+::placeholder{
+    color : var(--orange);
+}
+
 .contact-bottom .form{
     padding: 0 20px;
 }
