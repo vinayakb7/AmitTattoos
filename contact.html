@@ -115,11 +115,11 @@
                 </div>
 
                 <div class = "contact-bottom">
-                    <form class = "form">
-                        <input type = "text" placeholder="Your Name">
-                        <input type = "email" placeholder="Your Email">
-                        <input type = "text" placeholder="Subject">
-                        <textarea rows = "9" placeholder="Message"></textarea>
+                    <form class = "form" action="https://formspree.io/f/xqkrzpwb" method="post">
+                        <input name="Name" type = "text" placeholder="Your Name" required>
+                        <input name="Email Address" type = "email" placeholder="Your Email" required>
+                        <input name="Subject" type = "text" placeholder="Subject" required>
+                        <textarea name="Message" rows = "9" placeholder="Message" required></textarea>
                         <input type = "submit" class = "btn" value = "Send Message">
                     </form>
 
